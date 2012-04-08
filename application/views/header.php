@@ -29,9 +29,9 @@
           <!--<a class="brand hidden-desktop" href="#"><span class="logo azul">{s</span><span class="logo rojo">s</span><span class="logo amarillo">l} </span></a>-->
           <div class="nav-collapse">
             <ul class="nav">
-              <li <?php echo $nav['inicio'] ?>><a href="index.html">Inicio</a></li>
-              <li <?php echo $nav['manifiesto'] ?>><a href="manifiesto.html">Manifiesto</a></li>
-              <li <?php echo $nav['gente'] ?>><a href="gente.html">Gente</a></li>
+              <li <?php echo $nav['inicio'] ?>><a href="<?php echo site_url('inicio')?>">Inicio</a></li>
+              <li <?php echo $nav['manifiesto'] ?>><a href="<?php echo site_url('manifiesto')?>">Manifiesto</a></li>
+              <li <?php echo $nav['gente'] ?>><a href="<?php echo site_url('gente')?>">Gente</a></li>
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Proyectos <b class="caret"></b></a>
                 <ul class="dropdown-menu">
