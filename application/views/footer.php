@@ -6,6 +6,6 @@
 
     </div> <!-- /container -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>    
-    <script src="static/js/bootstrap.min.js"></script>
+    <script src="<?php echo site_url(); ?>static/js/bootstrap.min.js"></script>
   </body>
 </html>

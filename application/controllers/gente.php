@@ -19,11 +19,20 @@ class Gente extends CI_Controller {
 	 */
 	public function index()
 	{
+		$this->load->model('Users');
+		$users = $this->Users->getAllUsers();
+
 		$data['nav'] = array(
 							'inicio' => '',
 							'manifiesto' => '',
 							'gente' => 'class="active"'
 						);
+		
+		$data['users'] = $users;
+		$data['role'] = $this->Users->roles;
+		$data['team'] = $this->Users->team;
+		$data['projects'] = $this->Users->getAllProjects();
+
 		$this->load->view('header', $data);
 		$this->load->view('gente');
 		$this->load->view('footer');

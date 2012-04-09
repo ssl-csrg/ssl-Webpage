@@ -7,7 +7,7 @@
         <h1 class="alpha60 visible-phone mini">Sansanos por el Software Libre</h1>
         <p class="desc alpha60 hidden-phone">&nbsp;Software libre, para gente libre.&nbsp;</p>
         <p class="desc alpha60 visible-phone mini">&nbsp;Software libre, para gente libre.&nbsp;</p>
-        <p style="text-align: right;"><a class="btn btn-primary btn-large" href="manifiesto.html">Infórmate &raquo;</a> <a class="btn btn-primary btn-large" data-toggle="modal" href="#unete-modal">Únete &raquo;</a></p>
+        <p style="text-align: right;"><a class="btn btn-primary btn-large" href="<?php echo site_url('manifiesto')?>">Infórmate &raquo;</a> <a class="btn btn-primary btn-large" data-toggle="modal" href="#unete-modal">Únete &raquo;</a></p>
       </div>
 
       <div class="row">

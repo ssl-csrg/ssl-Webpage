@@ -9,8 +9,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- estilos -->
-    <link href="static/css/bootstrap.css" rel="stylesheet">
-    <link href="static/css/estilos.css" rel="stylesheet">
+    <link href="<?php echo site_url(); ?>static/css/bootstrap.css" rel="stylesheet">
+    <link href="<?php echo site_url(); ?>static/css/estilos.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,800,400' rel='stylesheet' type='text/css'>
     <!--[if lt IE 9]>
         <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -35,8 +35,9 @@
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Proyectos <b class="caret"></b></a>
                 <ul class="dropdown-menu">
-                  <li><a href="difusion.html">Difusion</a></li>
-                  <li><a href="desarrollo.html">Desarrollo</a></li>
+                  <li><a href="<?php echo site_url('proyectos/difusion')?>">Difusion</a></li>
+                  <li><a href="<?php echo site_url('proyectos/desarrollo')?>">Desarrollo</a></li>
+                  <li><a href="<?php echo site_url('proyectos/meta')?>">Meta</a></li>
                 </ul>
               </li>
               <li class="divider-vertical"></li>
