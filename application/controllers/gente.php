@@ -1,0 +1,40 @@
+<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+
+class Gente extends CI_Controller {
+
+	/**
+	 * Index Page for this controller.
+	 *
+	 * Maps to the following URL
+	 * 		http://example.com/index.php/welcome
+	 *	- or -  
+	 * 		http://example.com/index.php/welcome/index
+	 *	- or -
+	 * Since this controller is set as the default controller in 
+	 * config/routes.php, it's displayed at http://example.com/
+	 *
+	 * So any other public methods not prefixed with an underscore will
+	 * map to /index.php/welcome/<method_name>
+	 * @see http://codeigniter.com/user_guide/general/urls.html
+	 */
+	public function index()
+	{
+		$this->load->model('Users');
+		$users = $this->Users->getAllUsers();
+
+		$data['nav'] = array(
+							'inicio' => '',
+							'manifiesto' => '',
+							'gente' => 'class="active"'
+						);
+		
+		$data['users'] = $users;
+		$data['role'] = $this->Users->roles;
+		$data['team'] = $this->Users->team;
+		$data['projects'] = $this->Users->getAllProjects();
+
+		$this->load->view('header', $data);
+		$this->load->view('gente');
+		$this->load->view('footer');
+	}
+}
